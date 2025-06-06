@@ -1,9 +1,9 @@
-import { Text, View } from 'react-native'
-import { styles } from './styles'
+import { Container, Title } from "./styles";
 
 export function Dashboard() {
- return (
-<View style={styles.container}>
-<Text style={styles.title}>Home</Text>
-</View>
-)};
+  return (
+    <Container>
+      <Title>Dashboard</Title>
+    </Container>
+  );
+}
