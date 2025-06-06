@@ -1,21 +1,13 @@
-import { Dashboard } from '@/app/dashboard';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { Dashboard } from "@/app/dashboard";
+import theme from "@/global/styles/theme";
+import { StatusBar } from "expo-status-bar";
+import { ThemeProvider } from "styled-components";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ThemeProvider theme={theme}>
       <Dashboard />
       <StatusBar style="auto" />
-    </View>
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
